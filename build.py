@@ -69,10 +69,12 @@ for filepath in targetpaths:
     cur_related_path_without_ext = cur_related_path[:-3]
 
     cur_contents_lines = file2list(cur_fullpath)
-    cur_firstline = cur_contents_lines[0]
+
+    cur_title_headers = [ s for s in cur_contents_lines if '#' in s ]
+
+    cur_title_in_section = cur_title_headers[0].replace('#', '').strip()
     # `# Title and keywords`
     #    ^^^^^^^^^^^^^^^^^^   pick here.
-    cur_title_in_section = cur_firstline[2:]
 
     created_at = cur_related_path[:len('yyyy/mm/dd')]
     # linkstr = '[{}]({})'.format(
