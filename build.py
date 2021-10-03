@@ -80,8 +80,19 @@ for filepath in targetpaths:
         cur_related_path
     )
 
-    line = '| {} | {} |'.format(created_at, linkstr)
-    lines_toc.append(line)
+    created_at_list = str(created_at).split('/')
+
+    is_integer = True
+
+    for elem in created_at_list:
+        if elem.isdigit() == False:
+            is_integer = False
+    
+    if is_integer:
+        line = '| {} | {} |'.format(created_at, linkstr)
+        lines_toc.append(line)
+    
+    is_integer = True
 # yeah!
 #   2019/12  (*) Newest entries must be top!
 #   2019/11
