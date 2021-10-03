@@ -1,3 +1,9 @@
+---
+layout: default
+title: うしくんの独り言ブログ
+description: どうもただの凡人です
+---
+
 # README for development
 
 ## 要件
