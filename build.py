@@ -75,10 +75,11 @@ for filepath in targetpaths:
     cur_title_in_section = cur_firstline[2:]
 
     created_at = cur_related_path[:len('yyyy/mm/dd')]
-    linkstr = '[{}]({})'.format(
-        cur_title_in_section,
-        cur_related_path
-    )
+    # linkstr = '[{}]({})'.format(
+    #     cur_title_in_section,
+    #     cur_related_path
+    # )
+    linkstr = f"[{cur_title_in_section}](" + "{{site.baseurl}}" + f"{{% link {cur_related_path} %}})"
 
     created_at_list = str(created_at).split('/')
 
