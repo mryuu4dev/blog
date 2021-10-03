@@ -1,5 +1,9 @@
-## License
-- ソースコードは [MIT](LICENSE)
+### 筆者向けの情報
+- [開発用README](readme_development.md)
 
-## Author
-[stakiran](https://github.com/stakiran)
+### 参考
+- このブログサイトはGithub Pagesというサービスを使い構築されています
+- [stakiran/tit](https://github.com/stakiran/tit)を参考にさせていただきました
+
+### Author
+- ゆうと
