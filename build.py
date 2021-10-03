@@ -24,15 +24,14 @@ def get_basename(path):
     return os.path.splitext(get_filename(path))[0]
 
 MYFULLPATH = os.path.abspath(sys.argv[0])
-MYDIR = os.path.dirname(MYFULLPATH)
-FILENAME_HEADER   = 'readme_header.md'
-FILENAME_FOOTER   = 'readme_footer.md'
-FILENAME_OUTPUT   = 'readme.md'
+MYDIR = os.path.dirname(MYFULLPATH) + "\docs"
+FILENAME_HEADER   = 'tpl/header.md'
+FILENAME_FOOTER   = 'tpl/footer.md'
+FILENAME_OUTPUT   = 'docs/index.md'
 FILENAME_EXCLUDES = [
     FILENAME_HEADER,
     FILENAME_FOOTER,
-    FILENAME_OUTPUT,
-    'readme_development.md'
+    FILENAME_OUTPUT
 ]
 
 lines_header = file2list(FILENAME_HEADER)
