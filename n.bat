@@ -13,7 +13,7 @@ set /p yourcomment="Filename?(Need .md extension!!) >>>";
 
 set fullpath=%~dp0docs\%y4%\%mo2%\%d2%_%yourcomment%
 
-copy nul %fullpath%
+copy %~dp0blog_content_sample.md %fullpath%
 
 rem Open with assoc
 start "" "%fullpath%"
