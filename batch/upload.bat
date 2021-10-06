@@ -16,7 +16,7 @@ if "%GITSTATUS%"=="" (
 
 pushd %cd%
 echo uploading...
-git push origin master
+git push origin main
 popd
 
 call %~dp0displaywait.bat
